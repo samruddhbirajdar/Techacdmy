@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/*******************************************************************
+DIN NEXT Font
+*******************************************************************/
+.section-header {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px auto 30px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+.noise-gif {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('../images/common-noise-gif-square-anim.gif');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(0, 2px);
+    -moz-transform: translate(0, 2px);
+    -ms-transform: translate(0, 2px);
+    -o-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    -ms-transform: translate(0, 8px);
+    -o-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+  75%,
+  100% {
+    -webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 10px);
+    -ms-transform: translate(0, 10px);
+    -o-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+#atvi-community {
+  padding: 150px 0;
+  background: #000000;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  #atvi-community {
+    padding: 90px 0;
+  }
+}
+#atvi-community .inner-container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  #atvi-community .inner-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+#atvi-community .header {
+  position: relative;
+  font-size: 34px;
+  text-align: center;
+  margin: 0 auto 60px;
+  font-family: 'DIN Next LT Pro', Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1200px) {
+  #atvi-community .header {
+    margin: 0 auto 40px;
+  }
+}
+#atvi-community .header span {
+  padding: 0 20px;
+  background: none;
+}
+#atvi-community .header:after {
+  content: "";
+  background-color: #5A5B5C;
+  z-index: 1;
+  top: 125%;
+}
+@media only screen and (max-width: 768px) {
+  #atvi-community {
+    padding: 40px 0;
+  }
+  #atvi-community .header {
+    margin: 0 auto 20px;
+    font-size: 20px;
+  }
+  #atvi-community .header:after {
+    top: 190%;
+  }
+}
